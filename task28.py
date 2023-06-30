@@ -3,10 +3,9 @@
 # 2 2 -> 4 
 
 
-def sum_num(a,b):
-    if b > 0:
-        sum_num(a+1,b-1)
-    else: print(a)
+def sum(a,b):
+    if b > 0: return sum(a+1,b-1)
+    else: return a
 
 a, b = int(input()), int(input())
-sum_num(a,b)
+print(sum(a,b))

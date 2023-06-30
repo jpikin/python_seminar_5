@@ -14,8 +14,8 @@ def power(x, y):
     else:  
         return 1 / power(x, -y)     
 
-a, b = int(input()), int(input())
-print(power(a, b))        
+a, b = int(input('Введите число ')), int(input('Введите степень '))
+print(f'{a} в степени {b} = {power(a, b)}')        
 
 
 
